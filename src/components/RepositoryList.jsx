@@ -1,6 +1,8 @@
 import { RepositoryItem } from "./RepositoryItem"
 
-const repo = {
+import '../styles/repositories.scss'
+
+const repository = {
     name: 'unform',
     description: 'forms in react',
     link: 'https://github.com/Dizzysch'
@@ -12,7 +14,7 @@ export function RepositoryList(){
             <h1>Lista de repositórios</h1>
 
             <ul>
-                <RepositoryItem repo={repo}/>
+                <RepositoryItem repo={repository}/>
             </ul>
         </section>
     )
