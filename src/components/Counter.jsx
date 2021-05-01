@@ -1,11 +1,10 @@
 import { useState } from 'react'
 
 export function Counter(){
-    const [ counter, setCounter ] = useState(19);
+    const [ counter, setCounter ] = useState(1);
 
     function increment (){
-        setCounter(counter*counter)
-        console.log('gui da a bundinha')
+        setCounter(counter+1)
     }
 
     return (
@@ -15,7 +14,7 @@ export function Counter(){
                 type="button"
                 onClick={increment}>
 
-            Increment</button>
+            Click Me</button>
         </div>
     )
 }
